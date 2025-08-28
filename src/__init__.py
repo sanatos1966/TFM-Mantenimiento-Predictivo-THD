@@ -10,7 +10,7 @@ Módulos principales:
 - monitor_sistema: Sistema de monitoreo continuo en tiempo real
 - utils: Utilidades para datos y machine learning
 
-Autor: Antonio
+Autor: Antonio Cantos & Renzo Chavez
 """
 
 __version__ = "1.0.0"
