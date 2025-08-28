@@ -1,6 +1,6 @@
 
 # INSTRUCCIONES COMPLETAS - SISTEMA TFM MANTENIMIENTO PREDICTIVO
-## Antonio Vásquez - Frío Pacífico 1, Concepción, Chile
+## Antonio Cantos & Renzo Chavez - Frío Pacífico 1, Concepción, Chile
 
 ### 🎯 OBJETIVO
 Ejecutar y validar el sistema completo de mantenimiento predictivo que reproduce exactamente los resultados académicos del TFM:
