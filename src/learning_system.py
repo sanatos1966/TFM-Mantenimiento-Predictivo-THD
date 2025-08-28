@@ -6,8 +6,8 @@ Sistema de Aprendizaje Continuo para Mantenimiento Predictivo
 Implementa capacidades de aprendizaje automático y adaptación del modelo
 basado en nuevos datos industriales de compresores.
 
-Autor: Antonio (TFM)
-Fecha: Enero 2025
+Autor: Antonio Cantos & Renzo Chavez (TFM)
+Fecha: Agosto 2025
 """
 
 import os
