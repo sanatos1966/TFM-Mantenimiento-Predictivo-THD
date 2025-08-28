@@ -2,7 +2,7 @@
     "project": {
         "name": "TFM Mantenimiento Predictivo - Frío Pacífico 1",
         "version": "1.0.0",
-        "author": "Antonio",
+        "author": "Antonio Cantos & Renzo Chavez",
         "location": "Concepción, Chile",
         "description": "Sistema de mantenimiento predictivo para compresores industriales usando análisis THD no-lineal"
     },
