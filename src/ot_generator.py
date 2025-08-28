@@ -4,7 +4,7 @@
 ===============================================================================
 GENERADOR AUTOMÁTICO DE ÓRDENES DE TRABAJO - MANTENIMIENTO INTELIGENTE
 ===============================================================================
-Autor: Antonio - TFM EADIC
+Autor: Antonio Cantos & Renzo Chavez - TFM EADIC
 Descripción: Sistema que analiza anomalías y genera OT automáticamente
 Tipos: Correctivo, Preventivo, Predictivo, Prescriptivo
 ===============================================================================
