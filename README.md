@@ -1,6 +1,6 @@
 
 # 🏭 Sistema de Mantenimiento Predictivo Industrial
-## Ecosistema Completo para Compresores (TFM Antonio)
+## Ecosistema Completo para Compresores (TFM Antonio Cantos & Renzo Chavez)
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3+-green.svg)](https://scikit-learn.org/)
