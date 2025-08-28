@@ -1,5 +1,5 @@
 """
-Sistema de Mantenimiento Predictivo TFM - Antonio Vásquez
+Sistema de Mantenimiento Predictivo TFM - Antonio Cantos & Renzo Chavez
 Frío Pacífico 1, Concepción, Chile
 
 Pipeline completo para reproducir resultados académicos exactos:
