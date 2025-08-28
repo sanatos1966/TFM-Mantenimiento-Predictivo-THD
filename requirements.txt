@@ -1,6 +1,6 @@
 # TFM Mantenimiento Predictivo - Dependencias Python
-# Author: Antonio (TFM)
-# Date: January 2025
+# Author: Antonio Cantos & Renzo Chavez (TFM)
+# Date: Agosto 2025
 
 # Core Data Science Libraries
 numpy>=1.21.0,<2.0.0
