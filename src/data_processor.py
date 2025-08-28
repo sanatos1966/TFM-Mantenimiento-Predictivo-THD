@@ -6,7 +6,7 @@ Procesador de Datos para Sistema de Mantenimiento Predictivo
 Maneja la carga y procesamiento de nuevos datos en múltiples formatos:
 CSV, XLSX, PDF para el sistema de mantenimiento predictivo.
 
-Autor: Antonio (TFM)  
+Autor: Antonio Cantos & Renzo Chavez(TFM)  
 Fecha: Enero 2025
 """
 
