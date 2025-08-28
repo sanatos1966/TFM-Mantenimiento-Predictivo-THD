@@ -12,7 +12,7 @@ Implementa el sistema WATCHING (Real-time Monitoring) con:
 - Aprendizaje continuo con datos mensuales
 - Alertas preventivas con ventana de predicción de 72 horas
 
-Autor: Antonio
+Autor: Antonio Cantos & Renzo Chavez
 TFM: Mantenimiento Predictivo usando análisis THD
 """
 
