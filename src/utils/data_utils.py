@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Utilidades para manejo de datos - TFM Mantenimiento Predictivo
-Autor: Antonio - Sistema Frío Pacífico 1
+Autor: Antonio Cantos % Renzo Chavez - Sistema Frío Pacífico 1
 """
 
 import pandas as pd
