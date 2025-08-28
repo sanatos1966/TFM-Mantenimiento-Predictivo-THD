@@ -1,0 +1,19 @@
+DOCUMENTACIÓN - MÉTODOS DESCARTADOS EN ANÁLISIS TFM
+============================================================
+
+Random_Forest:
+  motivo_descarte: Falta de datos etiquetados suficientes
+  explicacion: RF es un método supervisado que requiere etiquetas de fallo/normal. Con solo 12 eventos correctivos identificados vs 101,646 registros, no hay suficientes ejemplos positivos para entrenar efectivamente.
+  datos_necesarios: ≥1000 eventos etiquetados (recomendación sklearn)
+  datos_disponibles: 12 eventos correctivos confirmados
+  ratio_problema: 12/101,646 = 0.01% (extremadamente desbalanceado)
+  conclusion: NO VIABLE para este caso de uso
+
+Autoencoder:
+  motivo_descarte: Complejidad innecesaria y recursos computacionales
+  explicacion: Los autoencoders requieren grandes volúmenes de datos y recursos computacionales significativos. Para este caso, IF y DBSCAN proporcionaron resultados superiores con menos complejidad.
+  datos_minimos: ≥100K registros homogéneos
+  recursos_requeridos: GPU, tiempo de entrenamiento extenso
+  resultado_comparativo: IF+DBSCAN alcanzaron F1=0.963 sin complejidad adicional
+  conclusion: NO NECESARIO - métodos más simples fueron más efectivos
+

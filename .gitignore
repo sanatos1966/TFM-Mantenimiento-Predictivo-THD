@@ -1,0 +1,26 @@
+# Crear archivo .gitignore
+echo "# Archivos temporales
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Archivos de datos grandes (opcional)
+*.csv
+*.xlsx
+*.pdf
+
+# Archivos de configuración local
+config/local_config.json
+
+# Logs
+logs/
+*.log
+
+# Modelos entrenados grandes
+models/*.pkl
+models/*.joblib
+
+# Archivos temporales de Windows
+desktop.ini" > .gitignore

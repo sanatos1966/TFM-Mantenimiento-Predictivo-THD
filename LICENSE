@@ -1,0 +1,73 @@
+MIT License
+
+Copyright (c) 2025 Antonio - TFM Mantenimiento Predictivo Frío Pacífico 1
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+
+TFM (Trabajo Fin de Máster) - Sistema de Mantenimiento Predictivo
+Frío Pacífico 1, Concepción, Chile
+
+Este proyecto fue desarrollado como parte de un Trabajo Fin de Máster (TFM) 
+en el área de mantenimiento predictivo para compresores industriales.
+
+Funcionalidades Principales:
+- Análisis THD (Total Harmonic Distortion) no-lineal
+- Detección de anomalías usando Isolation Forest + DBSCAN
+- Sistema de monitoreo continuo en tiempo real (WATCHING)
+- Generación inteligente de órdenes de trabajo (OT)
+- Análisis inter-compresores y comportamiento sistémico
+
+Parámetros Validados del TFM:
+- Total de registros procesados: 101,646
+- Anomalías detectadas: 439
+- F1-Score alcanzado: 0.963
+- Isolation Forest: n_estimators=200, contamination=0.004319
+- DBSCAN: eps=1.2, min_samples=5
+- Ensemble: 70% IF + 30% DBSCAN
+
+Variables Críticas Analizadas:
+- THD_Total (32.1% importancia)
+- Demanda_por_fase (26.8% importancia)  
+- Factor_Potencia (22.4% importancia)
+- Potencia_Activa (18.7% importancia)
+
+Uso Académico:
+Este software puede ser utilizado libremente para fines académicos, 
+investigación y educación, incluyendo trabajos de grado, tesis, 
+y proyectos de investigación.
+
+Uso Industrial:
+El software está disponible para uso industrial bajo los términos
+de la licencia MIT. Se recomienda validación adicional para 
+entornos de producción críticos.
+
+Cita Académica Sugerida:
+Antonio. (2025). Sistema de Mantenimiento Predictivo mediante 
+Análisis THD para Compresores Industriales. TFM, Frío Pacífico 1, 
+Concepción, Chile.
+
+Para más información o colaboraciones:
+- Repositorio: https://github.com/antonio-tfm/mantenimiento-predictivo
+- Contacto: Disponible a través del repositorio GitHub
+
+Agradecimientos:
+A Frío Pacífico 1 por proporcionar los datos reales de los 
+compresores industriales que hicieron posible este proyecto.

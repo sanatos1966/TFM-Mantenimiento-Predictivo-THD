@@ -1,0 +1,27 @@
+{
+  "datos_procesados": {
+    "registros_totales": 182461,
+    "compresores_analizados": 3,
+    "ot_correctivas": 23,
+    "ot_preventivas": 1379,
+    "mediciones_vibraciones": 92
+  },
+  "modelo_ml": {
+    "precision_estimada": 0.831,
+    "variables_utilizadas": [
+      "THD",
+      "Potencia_Activa"
+    ],
+    "anomalias_detectadas": 6910
+  },
+  "correlaciones": {
+    "thd_vibraciones": [],
+    "correlacion_promedio": 0
+  },
+  "anexos_generados": [
+    "A",
+    "B",
+    "H",
+    "L"
+  ]
+}

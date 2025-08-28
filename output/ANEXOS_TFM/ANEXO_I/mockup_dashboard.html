@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFM Pipeline - Dashboard Mantenimiento Predictivo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .dashboard { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .status-ok { color: #28a745; }
+        .status-warning { color: #ffc107; }
+        .status-danger { color: #dc3545; }
+        .metric { font-size: 2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🏭 TFM Pipeline - Mantenimiento Predictivo</h1>
+    <div class="dashboard">
+        <div class="card">
+            <h3>Estado Compresores</h3>
+            <p>C1: <span class="status-ok">✅ Normal</span></p>
+            <p>C2: <span class="status-warning">⚠️ Atención</span></p>
+            <p>C3: <span class="status-ok">✅ Normal</span></p>
+        </div>
+        <div class="card">
+            <h3>THD Actual</h3>
+            <p class="metric">1.23%</p>
+            <p>Tendencia: ↗️ Subiendo</p>
+        </div>
+        <div class="card">
+            <h3>Anomalías Activas</h3>
+            <p class="metric">2</p>
+            <p>Última: hace 15 min</p>
+        </div>
+        <div class="card">
+            <h3>OT Generadas</h3>
+            <p class="metric">3</p>
+            <p>Pendientes: 1</p>
+        </div>
+    </div>
+</body>
+</html>

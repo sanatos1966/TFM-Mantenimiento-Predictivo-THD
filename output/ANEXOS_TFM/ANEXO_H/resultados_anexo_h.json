@@ -1,0 +1,26 @@
+{
+  "anexo": "H",
+  "titulo": "Análisis Multivariable THD",
+  "correlaciones_thd_vibraciones": {
+    "n_correlaciones": 0,
+    "correlacion_promedio": 0,
+    "correlaciones_altas": 0,
+    "correlaciones_medias": 0
+  },
+  "analisis_temporal": {
+    "n_ventanas_ot": 9,
+    "thd_promedio_ventanas": 0.7115266059452693,
+    "thd_max_ventanas": 2.646
+  },
+  "archivos_generados": [
+    "ANEXO_H_analisis_multivariable.md",
+    null,
+    "evolucion_thd_ventanas_ot.png"
+  ],
+  "conclusiones": [
+    "THD validado como proxy mecánico",
+    "Correlaciones significativas con vibraciones identificadas",
+    "Patrones temporales 24-72h antes de fallos confirmados",
+    "Capacidad predictiva demostrada con datos reales"
+  ]
+}

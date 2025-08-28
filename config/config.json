@@ -1,0 +1,154 @@
+{
+    "project": {
+        "name": "TFM Mantenimiento Predictivo - Frío Pacífico 1",
+        "version": "1.0.0",
+        "author": "Antonio",
+        "location": "Concepción, Chile",
+        "description": "Sistema de mantenimiento predictivo para compresores industriales usando análisis THD no-lineal"
+    },
+    "data": {
+        "total_records": 101646,
+        "expected_anomalies": 439,
+        "compressors": [
+            "Compresor1_FP1",
+            "Compresor2_FP1",
+            "Compresor3_FP1"
+        ],
+        "sensor_data_path": "data/raw/sensor/",
+        "maintenance_records_path": "data/raw/maintenance_records/OT compresores.csv",
+        "monthly_reports_path": "data/raw/reports/",
+        "supported_formats": [
+            "csv",
+            "pdf",
+            "xlsx"
+        ]
+    },
+    "features": {
+        "critical_variables": {
+            "THD_Total": {
+                "importance": 32.1,
+                "description": "Total Harmonic Distortion - Variable más crítica"
+            },
+            "Demanda_por_fase": {
+                "importance": 26.8,
+                "description": "Demanda de potencia por fase"
+            },
+            "Factor_Potencia": {
+                "importance": 22.4,
+                "description": "Factor de potencia del sistema"
+            },
+            "Potencia_Activa": {
+                "importance": 18.7,
+                "description": "Potencia activa consumida"
+            }
+        },
+        "thd_analysis": {
+            "non_linear_relationships": true,
+            "inter_compressor_behavioral_analysis": true,
+            "system_wide_anomaly_detection": true
+        }
+    },
+    "models": {
+        "ensemble": {
+            "method": "weighted_ensemble",
+            "isolation_forest_weight": 0.7,
+            "dbscan_weight": 0.3,
+            "expected_f1_score": 0.963
+        },
+        "isolation_forest": {
+            "n_estimators": 200,
+            "max_samples": 0.8,
+            "contamination": 0.004319,
+            "random_state": 42,
+            "n_jobs": -1
+        },
+        "dbscan": {
+            "eps": 1.2,
+            "min_samples": 5,
+            "metric": "euclidean",
+            "algorithm": "auto"
+        },
+        "discarded_models": {
+            "random_forest": "Insuficientes etiquetas para entrenamiento supervisado",
+            "autoencoder": "Complejidad innecesaria para el problema específico"
+        }
+    },
+    "maintenance": {
+        "prediction_window_hours": 72,
+        "ot_types": {
+            "corrective": {
+                "description": "Mantenimiento correctivo inmediato",
+                "priority": "critical",
+                "response_time_hours": 4
+            },
+            "preventive": {
+                "description": "Mantenimiento preventivo programado",
+                "priority": "medium",
+                "response_time_hours": 168
+            },
+            "predictive": {
+                "description": "Mantenimiento predictivo basado en anomalías",
+                "priority": "high",
+                "response_time_hours": 24
+            },
+            "prescriptive": {
+                "description": "Recomendaciones inteligentes de optimización",
+                "priority": "low",
+                "response_time_hours": 336
+            }
+        }
+    },
+    "monitoring": {
+        "watching_system": {
+            "enabled": true,
+            "real_time_analysis": true,
+            "continuous_learning": true,
+            "alert_thresholds": {
+                "anomaly_score": 0.8,
+                "thd_critical": 15.0,
+                "power_factor_min": 0.85
+            }
+        },
+        "data_ingestion": {
+            "batch_processing": true,
+            "monthly_updates": true,
+            "automatic_model_retraining": true,
+            "backup_retention_days": 90
+        }
+    },
+    "deployment": {
+        "environment": "production",
+        "github_ready": true,
+        "academic_use": true,
+        "industrial_use": true,
+        "license": "MIT",
+        "python_version": ">=3.8",
+        "required_packages": [
+            "pandas>=1.5.0",
+            "numpy>=1.21.0",
+            "scikit-learn>=1.1.0",
+            "matplotlib>=3.5.0",
+            "seaborn>=0.11.0",
+            "plotly>=5.0.0",
+            "joblib>=1.1.0",
+            "openpyxl>=3.0.0",
+            "PyPDF2>=2.0.0"
+        ]
+    },
+    "paths": {
+        "base_dir": ".",
+        "src_dir": "src",
+        "data_dir": "data",
+        "config_dir": "config",
+        "tests_dir": "tests",
+        "output_dir": "output",
+        "logs_dir": "logs"
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "file_rotation": true,
+        "max_file_size_mb": 10,
+        "backup_count": 5
+    }
+}
