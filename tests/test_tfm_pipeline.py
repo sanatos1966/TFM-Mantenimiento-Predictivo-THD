@@ -3,7 +3,7 @@ Test TFM Pipeline - Pruebas Unitarias Completas
 ===============================================
 
 Pruebas unitarias para el sistema de mantenimiento predictivo TFM
-de Antonio en Frío Pacífico 1, Concepción, Chile.
+de Antonio Cantos & Renzo Chavez en Frío Pacífico 1, Concepción, Chile.
 
 Valida:
 - Funcionalidades de carga y procesamiento de datos
@@ -12,7 +12,7 @@ Valida:
 - Generación de OT inteligentes
 - Sistema de monitoreo continuo
 
-Autor: Antonio
+Autor: Antonio Cantos y Renzo Chavez
 TFM: Mantenimiento Predictivo usando análisis THD
 """
 
