@@ -6,7 +6,7 @@ Maneja la carga y procesamiento de nuevos datos en múltiples formatos:
 CSV, XLSX, PDF para el sistema de mantenimiento predictivo.
 
 Autor: Antonio Cantos & Renzo Chavez (TFM)
-Fecha: Enero 2025
+Fecha: Agosto 2025
 """
 
 import os
