@@ -2,83 +2,53 @@
 # INSTRUCCIONES COMPLETAS - SISTEMA TFM MANTENIMIENTO PREDICTIVO
 ## Antonio Cantos & Renzo Chavez - Frío Pacífico 1, Concepción, Chile
 
-### 🎯 OBJETIVO
-Ejecutar y validar el sistema completo de mantenimiento predictivo que reproduce exactamente los resultados académicos del TFM:
-- **101,646 registros industriales reales**
-- **439 anomalías detectadas**
-- **F1-Score = 0.963**
-- **Ensemble Isolation Forest + DBSCAN (70/30)**
+INSTRUCCIONES COMPLETAS - SISTEMA TFM MANTENIMIENTO PREDICTIVO
+Antonio Cantos & Renzo Chavez - Frío Pacífico 1, Concepción, Chile
+🎯 OBJETIVO
 
-### 📁 ARCHIVOS DESCARGADOS DE AI DRIVE
-Los siguientes archivos están disponibles en AI Drive y deben colocarse en tu directorio local `C:\TFM_pipeline\`:
+Ejecutar y validar el sistema completo de mantenimiento predictivo que reproduce exactamente los resultados académicos del TFM:
+
+101,646 registros industriales reales
+
+439 anomalías detectadas
+
+F1-Score = 0.963
+
+Ensemble Isolation Forest + DBSCAN (70/30)
+
+📁 ESTRUCTURA DEL REPOSITORIO
+
+Tras clonar desde GitHub:
 
 1. **validate_structure.py** - Script de validación de estructura del proyecto
 2. **run_tfm_pipeline.py** - Pipeline completo del sistema TFM
+   
 
-### 🔧 PASOS DE INSTALACIÓN LOCAL
-
-#### Paso 1: Descargar archivos desde AI Drive
-Ejecuta en PowerShell dentro de `C:\TFM_pipeline\`:
-
-```powershell
-# Descargar archivos críticos desde AI Drive (asegurate de tener acceso)
-# Los archivos validate_structure.py y run_tfm_pipeline.py están en AI Drive
-```
-
-#### Paso 2: Verificar estructura completa del proyecto
-```powershell
-# Ejecutar script de validación
-python validate_structure.py
-```
-
-**Resultado esperado:**
-```
 === VALIDACIÓN ESTRUCTURA PROYECTO TFM ===
 
-📁 Archivos raíz:
-  ✅ TFM_Pipeline_Real_Final_20250826_1951.py
-  ✅ README.md
-  ✅ LICENSE
-  ✅ .gitignore
-
-📂 Directorios y contenido:
-  ✅ src/
-    ✅ __init__.py
-  ✅ src/utils/
-    ✅ __init__.py
-  ✅ config/
-    ✅ config.json
-  ✅ data/
-    ✅ datos_completos_tfm.csv
-    ✅ datos_completos_tfm.xlsx
-  ✅ tests/
-    ✅ __init__.py
-  ✅ docs/
-  ✅ output/
-
-🔧 Validación configuración:
-  ✅ Parámetros ML encontrados
-  ✅ Contamination correcto: 0.004319
-  ✅ N_estimators correcto: 200
-  ✅ EPS correcto: 1.2
-
-📊 Validación archivos de datos:
-  ✅ data/datos_completos_tfm.csv: 182,670 registros, 5 columnas
-    ✅ Todas las columnas esperadas presentes
-
-🐍 Validación módulos Python:
-  ✅ Módulo 'src' importado correctamente
-  ✅ Módulo 'src.utils' importado correctamente
+TFM_pipeline/
+├── config/
+│   └── config.json
+├── data/
+│   ├── raw/            # Ficheros originales (.csv, .xlsx, .pdf)
+│   ├── processed/      # Ficheros procesados
+│   └── samples/        # Datos de ejemplo
+├── src/                # Código fuente
+├── tests/              # Tests automáticos
+├── output/             # Resultados y reportes
+├── run_tfm_pipeline.py # Pipeline completo
+├── watch_new_raw.py    # Script de monitoreo de nuevos datos
+└── README.md
 
 === VALIDACIÓN COMPLETA ===
 ```
 
+```
 #### Paso 3: Ejecutar pipeline completo TFM
 ```powershell
 # Ejecutar sistema completo
 python run_tfm_pipeline.py
 ```
-
 **Resultado esperado:**
 ```
 ```
