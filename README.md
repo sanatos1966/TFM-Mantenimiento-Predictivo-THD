@@ -67,7 +67,10 @@ python -m venv .venv
 pip install -r requirements.txt
 
 # Ejecutar pipeline
-python run_tfm_pipeline.pym_pipeline.test_installation
+python run_tfm_pipeline.py
+
+# Verificar instalación
+python tests/test_install.py
 ```
 
 ### Instalación Manual
