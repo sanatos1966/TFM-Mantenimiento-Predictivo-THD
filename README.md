@@ -290,7 +290,7 @@ cualquier archivo nuevo en formato `.csv`, `.xlsx` o `.pdf`.
 
 ```bash
 python watch_new_raw.py
-
+```
 ### Análisis Multi-Compresor
 ```python
 # Análisis de comportamiento inter-compresores (característica del TFM)
