@@ -125,7 +125,6 @@ TFM_pipeline/
 │   ├── academic_paper.pdf     # TFM original
 │   ├── api_documentation.md   # Documentación API
 │   └── user_guide.pdf        # Guía usuario
-├── 📄 setup.py               # Instalación automática
 ├── 📄 requirements.txt       # Dependencias Python
 ├── 📄 README.md             # Este archivo
 └── 📄 LICENSE               # Licencia MIT
