@@ -283,6 +283,13 @@ class MonitoreoIndustrial:
 monitor = MonitoreoIndustrial()
 monitor.ciclo_monitoreo_continuo()
 ```
+### 🚨 Modo Watcher (procesamiento automático de nuevos datos)
+
+El script `watch_new_raw.py` permite vigilar la carpeta `data/raw/` y procesar automáticamente
+cualquier archivo nuevo en formato `.csv`, `.xlsx` o `.pdf`.
+
+```bash
+python watch_new_raw.py
 
 ### Análisis Multi-Compresor
 ```python
