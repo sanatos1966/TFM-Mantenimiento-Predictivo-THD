@@ -60,7 +60,7 @@ Git
 ### Instalación Automática
 ```bash
 # Clonar el repositorio
-git clone https://github.com/antonio/tfm-mantenimiento-predictivo.git
+git clone https://github.com/antonio/tfm-mantenimiento-predictivo-THD
 cd tfm-mantenimiento-predictivo
 
 # Ejecutar instalación automática
