@@ -26,6 +26,8 @@ Tras clonar desde GitHub:
 
 === VALIDACIÓN ESTRUCTURA PROYECTO TFM ===
 
+=== VALIDACIÓN ESTRUCTURA PROYECTO TFM ===
+
 TFM_pipeline/
 ├── config/
 │   └── config.json
@@ -39,6 +41,9 @@ TFM_pipeline/
 ├── run_tfm_pipeline.py # Pipeline completo
 ├── watch_new_raw.py    # Script de monitoreo de nuevos datos
 └── README.md
+
+=== VALIDACIÓN COMPLETA ===
+
 
 === VALIDACIÓN COMPLETA ===
 ```
