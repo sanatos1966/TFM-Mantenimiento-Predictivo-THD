@@ -1,66 +1,49 @@
-# TFM Mantenimiento Predictivo - Dependencias Python
-# Author: Antonio Cantos & Renzo Chavez (TFM)
-# Date: Agosto 2025
-
-# Core Data Science Libraries
-numpy>=1.21.0,<2.0.0
-pandas>=1.3.0,<3.0.0
-scikit-learn>=1.0.0,<2.0.0
-
-# Visualization
-matplotlib>=3.5.0,<4.0.0
-seaborn>=0.11.0,<1.0.0
-plotly>=5.0.0,<6.0.0
+# Core
+numpy>=1.22,<2.0
+pandas>=1.3,<2.0
+scikit-learn>=1.0,<2.0
+matplotlib>=3.5,<4.0
+plotly>=5.0,<6.0
+dash>=2.0,<3.0
+joblib>=1.1,<2.0
+tqdm>=4.60,<5.0
+scipy>=1.7.0,<2.0.0
+python-dateutil>=2.8.0,<3.0.0
 
 # File Processing
 openpyxl>=3.0.9,<4.0.0      # Excel files (.xlsx)
 PyPDF2>=2.10.0,<4.0.0       # PDF files (basic extraction)
 pdfplumber>=0.7.0,<1.0.0    # PDF files (advanced table extraction)
 
-
-# Text Processing
+# Utilities
 chardet>=5.0.0,<6.0.0       # Character encoding detection
 
-# Machine Learning & Model Persistence
-joblib>=1.1.0,<2.0.0        # Model serialization
+# Dashboard & Web (opcional)
+dash-bootstrap-components>=1.0.0,<2.0.0 
 
-# Progress & Logging
-tqdm>=4.62.0,<5.0.0         # Progress bars
-logging>=0.4.9.6            # Enhanced logging
+# Development & Testing (opcional)
+pytest>=6.2.0,<8.0.0
+pytest-cov>=3.0.0,<5.0.0
+black>=22.0.0,<24.0.0
+flake8>=4.0.0,<7.0.0
+mypy>=0.950,<2.0.0
 
-# Date & Time
-python-dateutil>=2.8.0,<3.0.0
+# Jupyter Environment (opcional)
+jupyter>=1.0.0,<2.0.0
+notebook>=6.4.0,<8.0.0
+ipywidgets>=7.6.0,<9.0.0
 
-# Mathematical Operations
-scipy>=1.7.0,<2.0.0
+# System & Performance (opcional)
+psutil>=5.8.0,<6.0.0
+memory-profiler>=0.60.0,<1.0.0
 
-# Optional: Dashboard & Web Interface
-dash>=2.0.0,<3.0.0                      # Web dashboard
-dash-bootstrap-components>=1.0.0,<2.0.0 # Bootstrap components for Dash
+# Configuration & Validation (opcional)
+jsonschema>=4.0.0,<5.0.0
+pydantic>=1.8.0,<3.0.0
 
-# Optional: Development & Testing
-pytest>=6.2.0,<8.0.0           # Testing framework
-pytest-cov>=3.0.0,<5.0.0       # Coverage testing
-black>=22.0.0,<24.0.0          # Code formatting
-flake8>=4.0.0,<7.0.0           # Code linting
-mypy>=0.950,<2.0.0             # Type checking
+# Networking (opcional)
+requests>=2.25.0,<3.0.0
+urllib3>=1.26.0,<3.0.0
 
-# Optional: Jupyter Environment
-jupyter>=1.0.0,<2.0.0          # Jupyter notebook
-notebook>=6.4.0,<8.0.0        # Notebook interface
-ipywidgets>=7.6.0,<9.0.0      # Interactive widgets
-
-# System & Performance
-psutil>=5.8.0,<6.0.0           # System monitoring
-memory-profiler>=0.60.0,<1.0.0 # Memory profiling
-
-# Configuration & Validation
-jsonschema>=4.0.0,<5.0.0       # JSON schema validation
-pydantic>=1.8.0,<3.0.0         # Data validation
-
-# Networking (for IoT integration)
-requests>=2.25.0,<3.0.0        # HTTP requests
-urllib3>=1.26.0,<3.0.0         # URL handling
-
-# Compression
-lz4>=3.1.0,<5.0.0              # Fast compression for large datasets
+# Compression (opcional)
+lz4>=3.1.0,<5.0.0
