@@ -71,6 +71,7 @@ python run_tfm_pipeline.py
 
 # Verificar instalación
 python tests/test_install.py
+
 ```
 
 ### Instalación Manual
@@ -80,20 +81,20 @@ python -m venv venv_tfm
 source venv_tfm/bin/activate  # Linux/Mac
 # venv_tfm\Scripts\activate   # Windows
 
-# 2. Instalar dependencias core
+# 2. Dependencias core
 pip install numpy pandas scikit-learn matplotlib plotly dash joblib tqdm
 
-# 3. Instalar dependencias de procesamiento de archivos
+# 3. Procesamiento de archivos
 pip install openpyxl PyPDF2 pdfplumber chardet
 
 # Nota sobre Excel:
-# El sistema fuerza engine="openpyxl" para ficheros .xlsx (Excel moderno).
-# Si en algún caso se necesitan .xls antiguos, instalar adicionalmente:
-# pip install "xlrd<2.0"
+# El sistema fuerza engine="openpyxl" para .xlsx.
+# Si alguien necesita .xls antiguos: pip install "xlrd<2.0"
 
-# 4. Instalar dependencias opcionales
-pip install jupyter ipywidgets  # Para notebooks
-pip install pytest pytest-cov   # Para testing
+# 4. Opcionales
+pip install jupyter ipywidgets
+pip install pytest pytest-cov
+
 ```
 
 ## 🏗️ Arquitectura del Sistema
@@ -101,40 +102,40 @@ pip install pytest pytest-cov   # Para testing
 ```
 TFM_pipeline/
 ├── 📁 config/
-│   ├── config.json              # Configuración central
-│   └── production_config.json   # Configuración producción
+│   ├── config.json
+│   └── production_config.json
 ├── 📁 src/
-│   ├── tfm_pipeline.py          # Sistema principal (ensemble IF+DBSCAN)
-│   ├── ot_generator.py          # Generador órdenes trabajo
-│   ├── learning_system.py       # Aprendizaje continuo
-│   ├── data_processor.py        # Procesamiento multi-formato (CSV/XLSX/PDF)
-│   └── dashboard.py             # Dashboard tiempo real
+│   ├── tfm_pipeline.py
+│   ├── data_processor.py
+│   ├── ot_generator.py
+│   ├── learning_system.py
+│   └── dashboard.py
 ├── 📁 data/
-│   ├── raw/                     # Datos originales
-│   ├── processed/               # Datos procesados
-│   └── samples/                 # Datos ejemplo
+│   ├── raw/
+│   ├── processed/
+│   └── samples/
 ├── 📁 models/
-│   ├── isolation_forest.pkl     # Modelo IF entrenado
-│   ├── dbscan.pkl               # Modelo DBSCAN
-│   └── model_metadata.json      # Metadata modelos
+│   ├── isolation_forest.pkl
+│   ├── dbscan.pkl
+│   └── model_metadata.json
 ├── 📁 reports/
-│   ├── tfm_reproduction/        # Reportes TFM
-│   ├── anomalies/               # Reportes anomalías
-│   └── maintenance_orders/      # Órdenes generadas
+│   ├── tfm_reproduction/
+│   ├── anomalies/
+│   └── maintenance_orders/
 ├── 📁 tests/
-│   ├── test_install.py          # Verificación de instalación
-│   ├── test_pipeline.py         # Tests sistema principal
-│   ├── test_data_processor.py   # Tests procesamiento
-│   └── test_learning.py         # Tests aprendizaje
+│   ├── test_install.py
+│   ├── test_data_processor.py
+│   └── test_learning.py
 ├── 📁 docs/
-│   ├── academic_paper.pdf       # TFM original
-│   ├── api_documentation.md     # Documentación API
-│   └── user_guide.pdf           # Guía usuario
-├── 📄 requirements.txt          # Dependencias Python
-├── 📄 run_tfm_pipeline.py       # Script de ejecución principal
-├── 📄 README.md                 # Este archivo
-├── 📄 LICENSE                   # Licencia MIT
+│   ├── academic_paper.pdf
+│   ├── api_documentation.md
+│   └── user_guide.pdf
+├── 📄 requirements.txt
+├── 📄 run_tfm_pipeline.py
+├── 📄 README.md
+├── 📄 LICENSE
 └── 📄 .gitignore
+
 
 ```
 
