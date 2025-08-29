@@ -81,6 +81,26 @@ python run_tfm_pipeline.py
 
 **Resultado esperado:**
 ```
+```
+#### Paso 4: Activar procesamiento automático (Watcher)
+
+Además del pipeline completo, el sistema incluye un script de *watching* que permite
+vigilar la carpeta `data/raw/` y procesar automáticamente nuevos archivos en formato
+`.csv`, `.xlsx` o `.pdf`.
+
+```powershell
+python watch_new_raw.py
+```
+Comportamiento:
+Vigila la carpeta data/raw/.
+Procesa automáticamente cualquier archivo nuevo en formato .csv, .xlsx o .pdf.
+Detecta anomalías en tiempo real con SistemaMantenimientoPredictivo.
+Genera órdenes de trabajo con GeneradorOrdenesTrabajo.
+Actualiza modelos con SistemaAprendizajeContinuo.
+Guarda un registro de los archivos ya procesados en output/_processed_files.json.
+Nota: El intervalo de revisión por defecto es de 5 minutos. Puedes modificarlo editando la variable SLEEP_SEC en watch_new_raw.py.
+```
+==================================================
 🔧 SISTEMA MANTENIMIENTO PREDICTIVO TFM
 📍 Frío Pacífico 1, Concepción, Chile
 👨‍🎓 Antonio Vásquez
