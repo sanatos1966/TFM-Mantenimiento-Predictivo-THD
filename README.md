@@ -60,8 +60,8 @@ Git
 ### Instalación Automática
 ```bash
 # Clonar el repositorio
-git clone https://github.com/antonio/tfm-mantenimiento-predictivo-THD
-cd tfm-mantenimiento-predictivo
+git clone https://github.com/sanatos1966/TFM-Mantenimiento-Predictivo.git
+cd TFM-Mantenimiento-Predictivo-THD
 
 # Ejecutar instalación automática
 python setup.py install
