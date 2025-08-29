@@ -25,19 +25,23 @@ Tras clonar desde GitHub:
    
 
 === VALIDACIÓN ESTRUCTURA PROYECTO TFM ===
+
 TFM_pipeline/
-config/
-config.json
-data/
-raw/ -> Ficheros originales (.csv, .xlsx, .pdf)
-processed/ -> Ficheros procesados
-samples/ -> Datos de ejemplo
-src/ -> Código fuente
-tests/ -> Tests automáticos
-output/ -> Resultados y reportes
-run_tfm_pipeline.py -> Pipeline completo
-watch_new_raw.py -> Script de monitoreo de nuevos datos
-README.md -> Documentación principal
+  config/
+    config.json
+  data/
+    raw/            -> Ficheros originales (.csv, .xlsx, .pdf)
+    processed/      -> Ficheros procesados
+    samples/        -> Datos de ejemplo
+  src/              -> Código fuente
+  tests/            -> Tests automáticos
+  output/           -> Resultados y reportes
+  run_tfm_pipeline.py   -> Pipeline completo
+  watch_new_raw.py      -> Script de monitoreo de nuevos datos
+  README.md             -> Documentación principal
+
+=== VALIDACIÓN COMPLETA ===
+
 ```
 #### Paso 3: Ejecutar pipeline completo TFM
 ```powershell
