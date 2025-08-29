@@ -13,10 +13,10 @@ seaborn>=0.11.0,<1.0.0
 plotly>=5.0.0,<6.0.0
 
 # File Processing
-openpyxl>=3.0.9,<4.0.0      # Excel files (.xlsx, .xls)
-xlrd>=2.0.0,<3.0.0          # Excel files (legacy support)
-PyPDF2>=2.10.0,<4.0.0      # PDF files (basic extraction)
-pdfplumber>=0.7.0,<1.0.0   # PDF files (advanced table extraction)
+openpyxl>=3.0.9,<4.0.0      # Excel files (.xlsx)
+PyPDF2>=2.10.0,<4.0.0       # PDF files (basic extraction)
+pdfplumber>=0.7.0,<1.0.0    # PDF files (advanced table extraction)
+
 
 # Text Processing
 chardet>=5.0.0,<6.0.0       # Character encoding detection
