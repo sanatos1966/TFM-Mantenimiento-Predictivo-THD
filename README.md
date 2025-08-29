@@ -1,17 +1,17 @@
 
 # 🏭 Sistema de Mantenimiento Predictivo Industrial
-## Ecosistema Completo para Compresores (TFM Antonio Cantos & Renzo Chavez)
+## Ecosistema para Compresores (TFM Antonio Cantos & Renzo Chavez)
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3+-green.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Academic](https://img.shields.io/badge/Academic-TFM-red.svg)](https://github.com)
 
-> **Sistema inteligente de mantenimiento predictivo que reproduce los resultados exactos del TFM de Antonio (101,646 registros, 439 anomalías, F1=0.963) y extiende las capacidades con aprendizaje continuo, procesamiento multi-formato y generación automática de órdenes de trabajo.**
+> **Sistema inteligente de mantenimiento predictivo que reproduce los resultados  del TFM de Antonio Cantos y Renzo Chavez (101,646 registros, 439 anomalías, F1=0.963) y extiende las capacidades con aprendizaje continuo, procesamiento multi-formato y generación automática de órdenes de trabajo.**
 
 ## 🎯 Características Principales
 
-### 🔬 **Reproducción Exacta del TFM**
+### 🔬 **Reproducción del TFM**
 - ✅ **101,646 registros** procesados
 - ✅ **439 anomalías** detectadas  
 - ✅ **F1-Score: 0.963** (idéntico al TFM original)
@@ -19,23 +19,23 @@
 - ✅ **Correlaciones THD-Vibración** no lineales
 - ✅ **Ventanas predictivas de 72 horas**
 
-### 🚀 **Capacidades Extendidas**
+### 🚀 **Capacidades extendidas**
 - 📊 **Procesamiento Multi-formato**: CSV, XLSX, PDF
-- 🧠 **Aprendizaje Continuo**: Adaptación automática del modelo
+- 🧠 **Aprendizaje continuo**: Adaptación automática del modelo
 - 🔧 **Órdenes de Trabajo Inteligentes**: Correctivo, Preventivo, Predictivo, Prescriptivo
-- 📈 **Monitoreo Tiempo Real**: Dashboard interactivo
+- 📈 **Monitoreo tiempo real**: Dashboard interactivo
 - 🔄 **Integración IoT**: Datos industriales continuos
-- 📋 **Reportes Automáticos**: Análisis completo y anexos
+- 📋 **Reportes automáticos**: Análisis completo y anexos
 
-### 🏢 **Listo para Producción**
-- 🌐 **Despliegue Local**: Instalación completa en `TFM_pipeline/`  
+### 🏢 **Listo para producción**
+- 🌐 **Despliegue local**: Instalación completa en `TFM_pipeline/`  
 - 📚 **GitHub Ready**: Documentación completa para colaboración académica
-- 🔒 **Configuración Flexible**: JSON parametrizable
+- 🔒 **Configuración flexible**: JSON parametrizable
 - 📊 **Escalabilidad**: Multi-compresor y multi-planta
 
 ---
 
-## 📋 Tabla de Contenidos
+## 📋 Tabla de contenidos
 
 1. [Instalación Rápida](#-instalación-rápida)
 2. [Arquitectura del Sistema](#-arquitectura-del-sistema) 
@@ -48,7 +48,7 @@
 
 ---
 
-## ⚡ Instalación Rápida
+## ⚡ Instalación rápida
 
 ### Prerrequisitos
 ```bash
@@ -57,7 +57,7 @@ pip (Python package manager)
 Git
 ```
 
-### Instalación Automática
+### Instalación automática
 ```bash
 git clone https://github.com/sanatos1966/TFM-Mantenimiento-Predictivo-THD.git
 cd TFM-Mantenimiento-Predictivo-THD
@@ -74,7 +74,7 @@ python tests/test_install.py
 
 ```
 
-### Instalación Manual
+### Instalación manual
 ```bash
 # 1. Crear entorno virtual (recomendado)
 python -m venv venv_tfm
@@ -97,7 +97,7 @@ pip install pytest pytest-cov
 
 ```
 
-## 🏗️ Arquitectura del Sistema
+## 🏗️ Arquitectura del sistema
 
 ```
 TFM_pipeline/
@@ -141,9 +141,9 @@ TFM_pipeline/
 
 ---
 
-## 🚀 Uso Básico
+## 🚀 Uso básico
 
-### 1. Reproducir Resultados del TFM
+### 1. Reproducir resultados del TFM
 ```python
 from src.tfm_pipeline import SistemaMantenimientoPredictivo
 
@@ -159,7 +159,7 @@ print(f"F1-Score: {resultados['metricas']['f1_score']:.3f}")
 # Output esperado: 101646, 439, 0.963
 ```
 
-### 2. Procesar Nuevos Datos
+### 2. Procesar nuevos datos
 ```python
 from src.data_processor import ProcesadorDatos
 
@@ -202,7 +202,7 @@ for orden in ordenes:
     print("-" * 50)
 ```
 
-### 4. Activar Aprendizaje Continuo
+### 4. Activar aprendizaje continuo
 ```python
 from src.learning_system import SistemaAprendizajeContinuo
 
@@ -228,9 +228,9 @@ print(f"Aprendizaje aplicado: {info_incremental['aprendizaje_aplicado']}")
 
 ---
 
-## 🏭 Casos de Uso Avanzados
+## 🏭 Casos de uso avanzados
 
-### Monitoreo Industrial Completo
+### Monitoreo industrial completo
 ```python
 # Sistema completo integrado
 import time
@@ -465,7 +465,7 @@ Este sistema está diseñado para **reproducir exactamente** los resultados del 
 - **🎯 F1-Score**: 0.963 (excelente rendimiento)
 - **⚙️ Configuración**: Isolation Forest (70%) + DBSCAN (30%)
 
-### Parámetros TFM Exactos
+### Parámetros TFM 
 ```json
 {
   "datos": {
@@ -507,7 +507,7 @@ correlacion_thd_vibracion = 0.73  # Correlación no lineal fuerte
 ventana_prediccion = 72  # horas (insight clave del TFM)
 ```
 
-### Validación de Reproducibilidad
+### Validación de reproducibilidad
 ```python
 # Test de reproducibilidad automático
 def test_reproducibilidad_tfm():
@@ -531,7 +531,7 @@ test_reproducibilidad_tfm()
 
 ## 📈 Métricas y Rendimiento
 
-### Benchmarks del Sistema
+### Benchmarks del sistema
 - **⚡ Procesamiento**: ~10,000 registros/segundo
 - **🧠 Detección**: Tiempo real (<100ms por muestra)
 - **📊 Precisión**: F1=0.963 (reproducción TFM)
@@ -550,7 +550,7 @@ test_reproducibilidad_tfm()
 
 Este proyecto está abierto a contribuciones académicas y de la comunidad industrial.
 
-### Cómo Contribuir
+### Cómo contribuir
 
 1. **Fork** el repositorio
 2. **Crear** rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
@@ -558,7 +558,7 @@ Este proyecto está abierto a contribuciones académicas y de la comunidad indus
 4. **Push** a la rama (`git push origin feature/nueva-funcionalidad`)  
 5. **Abrir** Pull Request
 
-### Áreas de Contribución Prioritarias
+### Áreas de contribución prioritarias
 - 🔬 **Algoritmos ML**: Nuevos modelos de detección de anomalías
 - 📊 **Visualizaciones**: Dashboards interactivos avanzados  
 - 🏭 **Conectores IoT**: Integración con sistemas industriales
@@ -566,7 +566,7 @@ Este proyecto está abierto a contribuciones académicas y de la comunidad indus
 - 🧪 **Testing**: Casos de prueba adicionales
 - 📚 **Documentación**: Guías específicas por industria
 
-### Guidelines para Contribuidores
+### Guidelines para contribuidores
 - **Mantener reproducibilidad TFM**: No modificar parámetros core que afecten resultados TFM
 - **Tests obligatorios**: Toda nueva funcionalidad debe incluir tests
 - **Documentación**: Código bien documentado con docstrings
@@ -581,20 +581,6 @@ Este proyecto está abierto a contribuciones académicas y de la comunidad indus
 - 🔧 [Documentación API](docs/api_documentation.md)
 - 🎓 [Paper TFM Original](docs/academic_paper.pdf)
 - 💡 [Ejemplos de Uso](examples/)
-
-### Comunidad
-- 💬 [Discord Comunidad](https://discord.gg/tfm-mantenimiento)
-- 📧 [Lista Correo Académico](mailto:tfm-mantenimiento@academico.es)
-- 🐛 [Issues GitHub](https://github.com/antonio/tfm-mantenimiento-predictivo/issues)
-- 📊 [Discussions](https://github.com/antonio/tfm-mantenimiento-predictivo/discussions)
-
-### Soporte Comercial
-Para implementaciones industriales y soporte comercial:
-- 📧 contacto@mantenimiento-predictivo.com
-- 📞 +34 900 123 456
-- 🌐 [www.mantenimiento-predictivo.com](https://mantenimiento-predictivo.com)
-
----
 
 ## 📄 Licencia
 
