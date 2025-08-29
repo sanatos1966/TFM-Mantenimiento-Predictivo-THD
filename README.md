@@ -573,6 +573,11 @@ Este proyecto está abierto a contribuciones académicas y de la comunidad indus
 - **Rendimiento**: Benchmarks para optimizaciones
 
 ---
+## 📄 Documentación extendida
+
+Para la guía paso a paso con ejemplos de ejecución, validación de resultados
+y manual completo del sistema, consulta el  
+[Anexo K – Instrucciones completas del sistema TFM](./INSTRUCCIONES_COMPLETAS_TFM.md).
 
 ## 🆘 Soporte
 
