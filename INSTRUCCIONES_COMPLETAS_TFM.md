@@ -208,24 +208,16 @@ Los resultados deben coincidir **exactamente** con las especificaciones del TFM:
 #### Problema: Resultados no coinciden con TFM
 **Solución**: Verificar parámetros ML en config.json y versión correcta de datos
 
-### 📈 PRÓXIMOS PASOS TRAS VALIDACIÓN EXITOSA
-
-1. **Generar Anexos TFM Restantes (H, I, J)**
-2. **Implementar Sistema de Monitoreo Continuo**
-3. **Crear Generación Automática de OT**
-4. **Preparar Repositorio GitHub**
-5. **Documentación para Defensa Académica**
 
 ### 📞 CONTACTO Y SOPORTE
 Si encuentras algún problema durante la ejecución, documenta:
 1. Mensaje de error exacto
 2. Paso donde ocurre el problema
-3. Contenido del directorio (dir -Recurse -Name | Sort-Object)
-4. Versión de Python (python --version)
+3. Versión de Python (python --version)
 
 ### 🎓 RECONOCIMIENTOS ACADÉMICOS
 Sistema desarrollado para TFM de Mantenimiento Predictivo Industrial
-- **Institución**: [Tu Universidad]
+- **Institución**: [EADIC 2025]
 - **Ubicación**: Frío Pacífico 1, Concepción, Chile
 - **Tecnología**: Ensemble Machine Learning (Isolation Forest + DBSCAN)
 - **Datos Reales**: 182,670 registros industriales de compresores
