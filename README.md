@@ -81,16 +81,20 @@ source venv_tfm/bin/activate  # Linux/Mac
 # venv_tfm\Scripts\activate   # Windows
 
 # 2. Instalar dependencias core
-pip install numpy pandas scikit-learn matplotlib seaborn
-pip install openpyxl xlrd PyPDF2 pdfplumber
-pip install joblib tqdm plotly dash
+pip install numpy pandas scikit-learn matplotlib plotly dash joblib tqdm
 
-# 3. Instalar dependencias opcionales
+# 3. Instalar dependencias de procesamiento de archivos
+pip install openpyxl PyPDF2 pdfplumber chardet
+
+# Nota sobre Excel:
+# El sistema fuerza engine="openpyxl" para ficheros .xlsx (Excel moderno).
+# Si en algún caso se necesitan .xls antiguos, instalar adicionalmente:
+# pip install "xlrd<2.0"
+
+# 4. Instalar dependencias opcionales
 pip install jupyter ipywidgets  # Para notebooks
-pip install pytest pytest-cov  # Para testing
+pip install pytest pytest-cov   # Para testing
 ```
-
----
 
 ## 🏗️ Arquitectura del Sistema
 
@@ -605,9 +609,9 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 ## 🏆 Reconocimientos
 
 ### Autor Original del TFM
-- **👨‍🎓 Antonio**: Desarrollo del algoritmo original y metodología de análisis
-- **🎓 Universidad**: [Nombre Universidad]
-- **📅 Fecha TFM**: [Fecha]
+- **👨‍🎓 Antonio Cantos **: Desarrollo del algoritmo original y metodología de análisis
+- **🎓 Universidad**: [EADIC]
+- **📅 Fecha TFM**: [septiembre]
 
 ### Contribuidores del Ecosistema
 - **🤖 AI Assistant**: Desarrollo de extensiones y documentación
