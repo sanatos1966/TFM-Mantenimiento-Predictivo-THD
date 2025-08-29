@@ -104,34 +104,38 @@ TFM_pipeline/
 │   ├── config.json              # Configuración central
 │   └── production_config.json   # Configuración producción
 ├── 📁 src/
-│   ├── tfm_pipeline.py          # Sistema principal
+│   ├── tfm_pipeline.py          # Sistema principal (ensemble IF+DBSCAN)
 │   ├── ot_generator.py          # Generador órdenes trabajo
-│   ├── learning_system.py      # Aprendizaje continuo
-│   ├── data_processor.py       # Procesamiento multi-formato
-│   └── dashboard.py            # Dashboard tiempo real
+│   ├── learning_system.py       # Aprendizaje continuo
+│   ├── data_processor.py        # Procesamiento multi-formato (CSV/XLSX/PDF)
+│   └── dashboard.py             # Dashboard tiempo real
 ├── 📁 data/
-│   ├── raw/                    # Datos originales
-│   ├── processed/              # Datos procesados
-│   └── samples/                # Datos ejemplo
+│   ├── raw/                     # Datos originales
+│   ├── processed/               # Datos procesados
+│   └── samples/                 # Datos ejemplo
 ├── 📁 models/
-│   ├── isolation_forest.pkl    # Modelo IF entrenado
-│   ├── dbscan.pkl             # Modelo DBSCAN
-│   └── model_metadata.json    # Metadata modelos
+│   ├── isolation_forest.pkl     # Modelo IF entrenado
+│   ├── dbscan.pkl               # Modelo DBSCAN
+│   └── model_metadata.json      # Metadata modelos
 ├── 📁 reports/
-│   ├── tfm_reproduction/       # Reportes TFM
-│   ├── anomalies/             # Reportes anomalías
-│   └── maintenance_orders/     # Órdenes generadas
+│   ├── tfm_reproduction/        # Reportes TFM
+│   ├── anomalies/               # Reportes anomalías
+│   └── maintenance_orders/      # Órdenes generadas
 ├── 📁 tests/
-│   ├── test_pipeline.py       # Tests sistema principal
-│   ├── test_data_processor.py # Tests procesamiento
-│   └── test_learning.py       # Tests aprendizaje
+│   ├── test_install.py          # Verificación de instalación
+│   ├── test_pipeline.py         # Tests sistema principal
+│   ├── test_data_processor.py   # Tests procesamiento
+│   └── test_learning.py         # Tests aprendizaje
 ├── 📁 docs/
-│   ├── academic_paper.pdf     # TFM original
-│   ├── api_documentation.md   # Documentación API
-│   └── user_guide.pdf        # Guía usuario
-├── 📄 requirements.txt       # Dependencias Python
-├── 📄 README.md             # Este archivo
-└── 📄 LICENSE               # Licencia MIT
+│   ├── academic_paper.pdf       # TFM original
+│   ├── api_documentation.md     # Documentación API
+│   └── user_guide.pdf           # Guía usuario
+├── 📄 requirements.txt          # Dependencias Python
+├── 📄 run_tfm_pipeline.py       # Script de ejecución principal
+├── 📄 README.md                 # Este archivo
+├── 📄 LICENSE                   # Licencia MIT
+└── 📄 .gitignore
+
 ```
 
 ---
