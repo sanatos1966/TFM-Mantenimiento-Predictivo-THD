@@ -59,18 +59,15 @@ Git
 
 ### Instalación Automática
 ```bash
-# Clonar el repositorio
-git clone https://github.com/sanatos1966/TFM-Mantenimiento-Predictivo.git
+git clone https://github.com/sanatos1966/TFM-Mantenimiento-Predictivo-THD.git
 cd TFM-Mantenimiento-Predictivo-THD
 
-# Ejecutar instalación automática
-python setup.py install
-
-# O usando pip
+python -m venv .venv
+# Activa el entorno según tu SO
 pip install -r requirements.txt
 
-# Verificar instalación
-python -m tfm_pipeline.test_installation
+# Ejecutar pipeline
+python run_tfm_pipeline.pym_pipeline.test_installation
 ```
 
 ### Instalación Manual
